@@ -1,0 +1,24 @@
+#USDA Daset
+usda = read.csv("D:/KB/Spark - EdX/The Analytics Edge/dataset/usda.csv")
+HighSodium=as.numeric(usda$Sodium >mean(usda$Sodium, na.rm=TRUE))
+
+# Add HighSodium as a vector (column) of usda dataframe(table)
+usda$HighSodium=as.numeric(usda$Sodium >mean(usda$Sodium, na.rm=TRUE))
+usda$HS = HighSodium
+# Add HighProtein, HighFat, HighIron
+usda$HighIron = as.numeric(usda$Iron >mean(usda$Iron, na.rm=TRUE))
+usda$HighFat  = as.numeric(usda$TotalFat >mean(usda$TotalFat, na.rm=TRUE))
+usda$HighProtein = as.numeric(usda$Protein >mean(usda$Protein, na.rm=TRUE))
+usda$HighCarbs = as.numeric(usda$Carbohydrate>mean(usda$Carbohydrate, na.rm=TRUE))
+
+table(usda$HighSodium)
+table (usda$HighSodium,usda$HighFat)
+
+# Implies  - High protein=> High Iron
+# Iron and protein are correlated?
+tapply(usda$Iron, usda$HighProtein, mean,na.rm=TRUE )
+# 0        1 
+# 2.558945 3.197294 
+
+# Foods with high carb=>High on VitaminC
+tapply(usda$VitaminC, usda$HighCarbs, summary, na.rm=TRUE)

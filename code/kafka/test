@@ -1,0 +1,72 @@
+//Spark Streaming + Kafka for omniture data
+
+import kafka.serializer.StringDecoder
+import org.apache.spark.SparkConf
+import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.apache.spark.streaming.kafka._
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+import java.net.HttpURLConnection;
+import org.apache.commons.codec.binary.Base64;
+import java.net.URL;
+import org.json.JSONObject
+import java.io.OutputStreamWriter
+//import scala.util.parsing.json.JSONObject
+
+
+object KafkaClickStreamConsumer {
+
+        val sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+        def  getBasicAuthenticationEncoding():String ={
+                val up = "admin" + ":" + "Altisource123";
+                return new String(Base64.encodeBase64(up.getBytes()));
+        }
+		
+        def getAdjTime():String = {
+                val cal = Calendar.getInstance()
+                cal.add(Calendar.SECOND,5)
+                return sdf.format( cal.getTime())
+        }
+		
+        def getJSONData(log:String  ):String = {
+		
+				val log = log.map(s=>s.split("\t"))
+                val ts = getAdjTime()
+                val ip  = log.map(s=>s(7));
+                val url  = log.map(s=>s(12));
+                val swid  = log.map(s=>s(13));
+                val city  = log.map(s=>s(49));
+                val country  = log.map(s=>s(50));
+                val state  = log.map(s=>s(52));
+                //Create JSONObject here
+                val jsonParam = new JSONObject()
+                jsonParam.put("ip", ip)
+                jsonParam.put("url", url);
+                jsonParam.put("swid", swid);
+                jsonParam.put("city", city);
+                jsonParam.put("country", country);
+                jsonParam.put("state", state);
+
+println("===== Json Parameters :")
+println(jsonParam.toString())
+println("=========== ")
+                return jsonParam.toString();
+        }
+		
+		def getHTTPConn(urlstr:String): HttpURLConnection = {
+                val httpcon: HttpURLConnection = new URL(urlstr).openConnection().asInstanceOf[HttpURLConnection]
+                httpcon.setDoOutput(true);
+                httpcon.setRequestProperty("Content-Type", "application/json");
+                httpcon.setRequestProperty("Accept", "application/json");
+                httpcon.setRequestMethod("POST");
+                return httpcon;
+        }
+		
+        def main(args: Array[String]) {
+                val logs2 = "1331799426	2012-03-15 01:17:06	2860005755985467733	4611687631188657821	FAS-2.8-AS3	N	0	99.122.210.248	1	0		10	http://www.acme.com/SH55126545/VD55170364	{7AAB8415-E803-3C5D-7100-E362D7F67CA7}													U	en-us,en;q=0.5		516	575	1366	Y	N	Y	2	0	304	sbcglobal.net	15/2/2012 4:16:0 4 240	45	41	10002,00011,10020,00007	Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6	48	0	2	3	0	homestead	usa	528	fl	0	0	0	0								0																	WPLG					0											120																								WPLG																																																			0"
+				println(getJSONData(logs2))
+                 
+        }
+}
+                

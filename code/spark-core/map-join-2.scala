@@ -1,0 +1,5 @@
+val pageNames=sc.textFile("pages.txt").map(...)
+val pageMap = pageNames.collect().toMap()
+val bc = sc.broadcast(pageMap)
+val visits = sc.textFile("visits.txt").map(..)
+val joined = visits.map(v=>(v._1,(bc.value(v._1), v._2)))

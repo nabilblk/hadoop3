@@ -1,0 +1,58 @@
+//Online model : http://awesome.lexalytics.com/machine-learning?adloc=lex-adr&ppc=lexRet&ag=get-machine-learning
+
+
+//Machine Learning
+1) Data Cleansing (error in sourcing, storing, retrieving, transformation, pipelining etc)
+2) Exploratory Data Analysis (Bell Labs)vs. Confirmation Data Analysis 
+   5 number summary - sample minimum, lower quartile, median, upper quartile, sample maximum - box plot, stem and leaf diagram
+   Summary Sets - Anscombe's Quartet 1973
+3) Supervisory Learning (kNN, Naive Bayes, Logistic Regression, Linear Regression?, Support Vector Machines, Random Forests)
+   Unsupervisory Techniques (Clustering, Factor Analysis, Latent Dirichlet Allocation)
+4) Normal Distrib, Central Limit Theorem (Th distribution of sum of n identically distributed random variables X approaches a normal distrib as n-> infinity)
+        t-test & ANOVA 
+    mean, variance, t-test, ANOVA -? assumes data are normally distributed
+5)  Other distribs  - Poisson D, Exponential D, Chi-Sq D, Zipf, Yule, Pareto, Binomaial, Multinomial
+
+ML-Lib 
+======
+1) Classification - SVM, Logistic Regression, Decision Trees, Naive Bayes, K-NN
+2) Regression - Linear, Lasso, Ridge, K-Neigherest Neighbor
+3) Misc - Alternating Least Squares, K-Means, SVD, Opt Primitives(SGD, L-BGFS)
+4) Colloborative Filtering
+5) Text Analysis
+6) Entity Resolution (ER)
+
+Terminology:
+======
+Observations: Items (or entities) used for learning or for observation. eg. emails
+Features: Attributes (typically numeric) used to represent observations (eg. for emails:  length, date, keywords etc)
+Labels: Values/Categories defined for Observations (eg. face=1 or 0 for image recognition or spam=0 or 1 for spam detection)
+Training Data set: Dataset used for training the algorithm
+Test Data Set: The data set used for validation purposes (Test data is typically withheld at the time of training)
+
+Supervised Learning:
+=======
+Labels teach the machine
+
+eg. Classification (spam detection)- categories are discrete (no closeness of labels )
+Regression (eg. stock price prediction)- categories are continuous (closeness possible)
+Unsupervisory Learning:
+====
+"Algorithm" should detect latent structure from the features alone
+Often used as a pre-processing step for Supervisory learning (or) for exploratory purposes
+
+Clustering - communities with a large group
+Dimensionalatiy Reduction - pixels-> High Density images
+
+Steps Involved in Unsupervised Learning:
+=====
+Obtain Raw Data-> Feature Extraction->Supervised Learning->Evaluation (Iterate and improve features if necessary) -> Prediction
+
+
+
+
+
+
+
+
+

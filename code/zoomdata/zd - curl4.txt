@@ -1,0 +1,20 @@
+{"ts":"widget","price":"19.95","quantity":10}
+
+{"_ts":"08/17/2015 17:17:10","ip" :"99.122.210.248","url":"www.novell.com","swid":
+"\{7AAB8415-E803-3C5D-7100-E362D7F67CA7\}","city":"Homestead","state":"FL"}
+
+
+curl -v --user admin:Altisource123 'https://103.19.88.246:8443/zoomdata/service/upload?source=CSRT' -X POST -H "Content-Type: application/json" -d '{"_ts":"08/21/2015 16:26:10","ip" :"99.122.210.248","url":"www.google.com","swid":"{7AAB8415-E803-3C5D-7100-E362D7F67CA7}","city":"Atlanta","state":"GA"}' --insecure
+
+curl -v --user admin:Altisource123 'https://103.19.88.246:8443/zoomdata/service/upload?source=CSRT' -X POST -H "Content-Type: application/json" -d '{"_ts":"08/22/2015 19:27:05", "state":"ny","swid":"{E3FEBA62-CABA-11D4-820E-00A0C9E58E2D}", "url":"http://www.acme.com/SH55126545/VD55149415","country":"usa","city":"queensbury","ip":"67.240.15.94"}' --insecure
+
+{"ts":"08/22/2015 15:14:05","state":"ny","swid":"{E3FEBA62-CABA-11D4-820E-00A0C9E58E2D}","url":"http://www.acme.com/SH55126545/VD55166807","country":"usa","city":"queensbury","ip":"67.240.15.94"}
+
+col_2 ts,
+col_8 ip,
+col_13 url,
+col_14 swid,
+col_50 city,
+col_51 country,
+col_53 `state`
+from omniturelogs;

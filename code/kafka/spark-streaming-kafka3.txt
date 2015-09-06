@@ -1,0 +1,25 @@
+import org.apache.kafka.clients.producer.{ProducerConfig, KafkaProducer, ProducerRecord}
+
+import org.apache.spark.streaming._
+import org.apache.spark.streaming.kafka._
+import org.apache.spark.SparkConf
+
+
+val zkQuorum= "103.19.88.246"
+val group = "group1"
+val topics = "test"
+val numThreads = 1
+
+val ssc = new StreamingContext(sc, Seconds(30))
+ssc.checkpoint("checkpoint")
+
+val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap
+val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap)
+
+
+ lines.foreachRDD { rdd =>
+		rdd.foreach(println)
+	} 
+
+ssc.start()
+ssc.awaitTermination()

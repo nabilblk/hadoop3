@@ -1,0 +1,8 @@
+-- run the complex_employees example prior to this: 
+-- Table generating functions
+
+SELECT explode(subordinates) AS sub FROM complex_employees;
+-- Try the following- Results in Error
+SELECT name, explode(subordinates) AS sub FROM employees;
+
+SELECT name, sub  FROM complex_employees LATERAL VIEW explode(subordinates) subView AS sub;

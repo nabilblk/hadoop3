@@ -1,0 +1,1 @@
+var avglens = sc.textFile("hdfs://localhost:8020/tmp/purplecow.txt").flatMap(line => line.split("\\W")).filter(line => line.length > 0).map(word => (word(0),word.length)).groupByKey().map(pair => (pair._1, pair._2.sum/pair._2.size.toDouble)).count()

@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogsRoot XmlGeneratedAt="8/26/2015 8:46:47 PM">
+  <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" PhysicalSize="-1" CloudTable="" CloudColumn="" CloudName="arlt">
+    <Title>Build started</Title>
+    <Description></Description>
+    <StartTime>8/26/2015 8:45:17 PM</StartTime>
+    <EndTime>8/26/2015 8:45:17 PM</EndTime>
+    <Duration></Duration>
+    <ID>1</ID>
+    <Level>1</Level>
+    <ParentID>-1</ParentID>
+    <StartTimeInTicks>635762187178947022</StartTimeInTicks>
+    <EndTimeInTicks>635762187178947022</EndTimeInTicks>
+    <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="0" DriveTotalFreeSpace="0" DriveAvailableFreeSpace="0" AvailableMemory="4882010112" PhysicalMemory="8486371328" AvailableProcessMemory="140197888" />
+    <Children>
+      <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="" CloudColumn="" CloudName="arlt">
+        <Title>Initializing</Title>
+        <Description></Description>
+        <StartTime>8/26/2015 8:45:17 PM</StartTime>
+        <EndTime>8/26/2015 8:45:17 PM</EndTime>
+        <Duration></Duration>
+        <ID>2</ID>
+        <Level>2</Level>
+        <ParentID>1</ParentID>
+        <StartTimeInTicks>635762187178967022</StartTimeInTicks>
+        <EndTimeInTicks>635762187178967022</EndTimeInTicks>
+        <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="0" DriveTotalFreeSpace="0" DriveAvailableFreeSpace="0" AvailableMemory="4881879040" PhysicalMemory="8486371328" AvailableProcessMemory="140218368" />
+        <Children>
+          <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="" CloudColumn="" CloudName="arlt">
+            <Title>Initialization completed</Title>
+            <Description></Description>
+            <StartTime>8/26/2015 8:45:17 PM</StartTime>
+            <EndTime>8/26/2015 8:45:19 PM</EndTime>
+            <Duration>00:00:01</Duration>
+            <ID>3</ID>
+            <Level>3</Level>
+            <ParentID>2</ParentID>
+            <StartTimeInTicks>635762187178967022</StartTimeInTicks>
+            <EndTimeInTicks>635762187193947022</EndTimeInTicks>
+            <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108850216960" DriveAvailableFreeSpace="108850216960" AvailableMemory="4758159360" PhysicalMemory="8486371328" AvailableProcessMemory="149037056" />
+          </ElastiCube.ManagementService.Process.TrackingItemEvent>
+        </Children>
+      </ElastiCube.ManagementService.Process.TrackingItemEvent>
+      <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="2" CloudTable="" CloudColumn="" CloudName="arlt">
+        <Title>Creating Schema</Title>
+        <Description></Description>
+        <StartTime>8/26/2015 8:45:19 PM</StartTime>
+        <EndTime>8/26/2015 8:45:19 PM</EndTime>
+        <Duration></Duration>
+        <ID>4</ID>
+        <Level>2</Level>
+        <ParentID>1</ParentID>
+        <StartTimeInTicks>635762187194007022</StartTimeInTicks>
+        <EndTimeInTicks>635762187194007022</EndTimeInTicks>
+        <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108850216960" DriveAvailableFreeSpace="108850216960" AvailableMemory="4758159360" PhysicalMemory="8486371328" AvailableProcessMemory="149053440" />
+        <Children>
+          <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="2" CloudTable="" CloudColumn="" CloudName="arlt">
+            <Title>Schema created successfully</Title>
+            <Description></Description>
+            <StartTime>8/26/2015 8:45:23 PM</StartTime>
+            <EndTime>8/26/2015 8:45:23 PM</EndTime>
+            <Duration></Duration>
+            <ID>5</ID>
+            <Level>3</Level>
+            <ParentID>4</ParentID>
+            <StartTimeInTicks>635762187238757022</StartTimeInTicks>
+            <EndTimeInTicks>635762187238757022</EndTimeInTicks>
+            <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108845887488" DriveAvailableFreeSpace="108845887488" AvailableMemory="4768387072" PhysicalMemory="8486371328" AvailableProcessMemory="142921728" />
+          </ElastiCube.ManagementService.Process.TrackingItemEvent>
+        </Children>
+      </ElastiCube.ManagementService.Process.TrackingItemEvent>
+      <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_CUSTACCT" CloudColumn="" CloudName="arlt">
+        <Title>Building</Title>
+        <Description></Description>
+        <StartTime>8/26/2015 8:45:23 PM</StartTime>
+        <EndTime>8/26/2015 8:45:23 PM</EndTime>
+        <Duration></Duration>
+        <ID>6</ID>
+        <Level>2</Level>
+        <ParentID>1</ParentID>
+        <StartTimeInTicks>635762187238957022</StartTimeInTicks>
+        <EndTimeInTicks>635762187238957022</EndTimeInTicks>
+        <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108845887488" DriveAvailableFreeSpace="108845887488" AvailableMemory="4768739328" PhysicalMemory="8486371328" AvailableProcessMemory="139051008" />
+        <Children>
+          <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_CUSTACCT" CloudColumn="" CloudName="arlt">
+            <Title>Importing Data</Title>
+            <Description></Description>
+            <StartTime>8/26/2015 8:45:23 PM</StartTime>
+            <EndTime>8/26/2015 8:45:23 PM</EndTime>
+            <Duration></Duration>
+            <ID>7</ID>
+            <Level>3</Level>
+            <ParentID>6</ParentID>
+            <StartTimeInTicks>635762187238987022</StartTimeInTicks>
+            <EndTimeInTicks>635762187238987022</EndTimeInTicks>
+            <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108845887488" DriveAvailableFreeSpace="108845887488" AvailableMemory="4768714752" PhysicalMemory="8486371328" AvailableProcessMemory="139051008" />
+            <Children>
+              <CopyDataChunkIntoCloudTable State="Success" TraceLevel="2" CloudTable="aARLTXwAaCUSTACCT" CloudColumn="" CloudName="" ChunkID="1" CountRecords="20995" FirstRecord="0" LastRecord="0">
+                <Title>Data Chunk 1 successfully prepared</Title>
+                <Description />
+                <StartTime>8/26/2015 8:45:36 PM</StartTime>
+                <EndTime>8/26/2015 8:45:41 PM</EndTime>
+                <Duration>00:00:05</Duration>
+                <ID>8</ID>
+                <Level>4</Level>
+                <ParentID>7</ParentID>
+                <StartTimeInTicks>635762187362097022</StartTimeInTicks>
+                <EndTimeInTicks>635762187419187022</EndTimeInTicks>
+              </CopyDataChunkIntoCloudTable>
+              <InitializeCopyInto State="Success" TraceLevel="0" CloudTable="ARLT_CUSTACCT" CloudColumn="" CloudName="arlt">
+                <Title>Import ended. 1 chunks inserted.</Title>
+                <Description />
+                <StartTime>8/26/2015 8:45:42 PM</StartTime>
+                <EndTime>8/26/2015 8:45:42 PM</EndTime>
+                <Duration>00:00:00.41</Duration>
+                <ID>9</ID>
+                <Level>4</Level>
+                <ParentID>7</ParentID>
+                <StartTimeInTicks>635762187424267022</StartTimeInTicks>
+                <EndTimeInTicks>635762187424677022</EndTimeInTicks>
+              </InitializeCopyInto>
+              <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_CUSTACCT" CloudColumn="" CloudName="arlt">
+                <Title>Successfully ended</Title>
+                <Description></Description>
+                <StartTime>8/26/2015 8:45:23 PM</StartTime>
+                <EndTime>8/26/2015 8:45:42 PM</EndTime>
+                <Duration>00:00:18</Duration>
+                <ID>10</ID>
+                <Level>4</Level>
+                <ParentID>7</ParentID>
+                <StartTimeInTicks>635762187238987022</StartTimeInTicks>
+                <EndTimeInTicks>635762187424697022</EndTimeInTicks>
+                <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108852477952" DriveAvailableFreeSpace="108852477952" AvailableMemory="4753170432" PhysicalMemory="8486371328" AvailableProcessMemory="150253568" />
+              </ElastiCube.ManagementService.Process.TrackingItemEvent>
+            </Children>
+          </ElastiCube.ManagementService.Process.TrackingItemEvent>
+          <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_CUSTACCT" CloudColumn="" CloudName="arlt">
+            <Title>Successfully built</Title>
+            <Description></Description>
+            <StartTime>8/26/2015 8:45:42 PM</StartTime>
+            <EndTime>8/26/2015 8:45:42 PM</EndTime>
+            <Duration></Duration>
+            <ID>11</ID>
+            <Level>3</Level>
+            <ParentID>6</ParentID>
+            <StartTimeInTicks>635762187424777022</StartTimeInTicks>
+            <EndTimeInTicks>635762187424777022</EndTimeInTicks>
+            <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108852477952" DriveAvailableFreeSpace="108852477952" AvailableMemory="4753338368" PhysicalMemory="8486371328" AvailableProcessMemory="151683072" />
+          </ElastiCube.ManagementService.Process.TrackingItemEvent>
+        </Children>
+      </ElastiCube.ManagementService.Process.TrackingItemEvent>
+      <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_MORTGAGE" CloudColumn="" CloudName="arlt">
+        <Title>Building</Title>
+        <Description></Description>
+        <StartTime>8/26/2015 8:45:42 PM</StartTime>
+        <EndTime>8/26/2015 8:45:42 PM</EndTime>
+        <Duration></Duration>
+        <ID>12</ID>
+        <Level>2</Level>
+        <ParentID>1</ParentID>
+        <StartTimeInTicks>635762187424847022</StartTimeInTicks>
+        <EndTimeInTicks>635762187424847022</EndTimeInTicks>
+        <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108852477952" DriveAvailableFreeSpace="108852477952" AvailableMemory="4753338368" PhysicalMemory="8486371328" AvailableProcessMemory="153427968" />
+        <Children>
+          <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_MORTGAGE" CloudColumn="" CloudName="arlt">
+            <Title>Importing Data</Title>
+            <Description></Description>
+            <StartTime>8/26/2015 8:45:42 PM</StartTime>
+            <EndTime>8/26/2015 8:45:42 PM</EndTime>
+            <Duration></Duration>
+            <ID>13</ID>
+            <Level>3</Level>
+            <ParentID>12</ParentID>
+            <StartTimeInTicks>635762187424867022</StartTimeInTicks>
+            <EndTimeInTicks>635762187424867022</EndTimeInTicks>
+            <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108852477952" DriveAvailableFreeSpace="108852477952" AvailableMemory="4753338368" PhysicalMemory="8486371328" AvailableProcessMemory="153927680" />
+            <Children>
+              <CopyDataChunkIntoCloudTable State="Success" TraceLevel="2" CloudTable="aARLTXwAaMORTGAGE" CloudColumn="" CloudName="" ChunkID="1" CountRecords="20366" FirstRecord="0" LastRecord="0">
+                <Title>Data Chunk 1 successfully prepared</Title>
+                <Description />
+                <StartTime>8/26/2015 8:45:44 PM</StartTime>
+                <EndTime>8/26/2015 8:45:53 PM</EndTime>
+                <Duration>00:00:08</Duration>
+                <ID>14</ID>
+                <Level>4</Level>
+                <ParentID>13</ParentID>
+                <StartTimeInTicks>635762187441347022</StartTimeInTicks>
+                <EndTimeInTicks>635762187530107022</EndTimeInTicks>
+              </CopyDataChunkIntoCloudTable>
+              <InitializeCopyInto State="Success" TraceLevel="0" CloudTable="ARLT_MORTGAGE" CloudColumn="" CloudName="arlt">
+                <Title>Import ended. 1 chunks inserted.</Title>
+                <Description />
+                <StartTime>8/26/2015 8:45:53 PM</StartTime>
+                <EndTime>8/26/2015 8:45:53 PM</EndTime>
+                <Duration>00:00:00.53</Duration>
+                <ID>15</ID>
+                <Level>4</Level>
+                <ParentID>13</ParentID>
+                <StartTimeInTicks>635762187534697022</StartTimeInTicks>
+                <EndTimeInTicks>635762187535227022</EndTimeInTicks>
+              </InitializeCopyInto>
+              <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_MORTGAGE" CloudColumn="" CloudName="arlt">
+                <Title>Successfully ended</Title>
+                <Description></Description>
+                <StartTime>8/26/2015 8:45:42 PM</StartTime>
+                <EndTime>8/26/2015 8:45:53 PM</EndTime>
+                <Duration>00:00:11</Duration>
+                <ID>16</ID>
+                <Level>4</Level>
+                <ParentID>13</ParentID>
+                <StartTimeInTicks>635762187424867022</StartTimeInTicks>
+                <EndTimeInTicks>635762187535237022</EndTimeInTicks>
+                <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108833722368" DriveAvailableFreeSpace="108833722368" AvailableMemory="4705140736" PhysicalMemory="8486371328" AvailableProcessMemory="187314176" />
+              </ElastiCube.ManagementService.Process.TrackingItemEvent>
+            </Children>
+          </ElastiCube.ManagementService.Process.TrackingItemEvent>
+          <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_MORTGAGE" CloudColumn="" CloudName="arlt">
+            <Title>Successfully built</Title>
+            <Description></Description>
+            <StartTime>8/26/2015 8:45:53 PM</StartTime>
+            <EndTime>8/26/2015 8:45:53 PM</EndTime>
+            <Duration></Duration>
+            <ID>17</ID>
+            <Level>3</Level>
+            <ParentID>12</ParentID>
+            <StartTimeInTicks>635762187535307022</StartTimeInTicks>
+            <EndTimeInTicks>635762187535307022</EndTimeInTicks>
+            <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108833722368" DriveAvailableFreeSpace="108833722368" AvailableMemory="4705247232" PhysicalMemory="8486371328" AvailableProcessMemory="187723776" />
+          </ElastiCube.ManagementService.Process.TrackingItemEvent>
+        </Children>
+      </ElastiCube.ManagementService.Process.TrackingItemEvent>
+      <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_CUSTINFO" CloudColumn="" CloudName="arlt">
+        <Title>Building</Title>
+        <Description></Description>
+        <StartTime>8/26/2015 8:45:53 PM</StartTime>
+        <EndTime>8/26/2015 8:45:53 PM</EndTime>
+        <Duration></Duration>
+        <ID>18</ID>
+        <Level>2</Level>
+        <ParentID>1</ParentID>
+        <StartTimeInTicks>635762187535437022</StartTimeInTicks>
+        <EndTimeInTicks>635762187535437022</EndTimeInTicks>
+        <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108833722368" DriveAvailableFreeSpace="108833722368" AvailableMemory="4704940032" PhysicalMemory="8486371328" AvailableProcessMemory="188055552" />
+        <Children>
+          <ElastiCube.ManagementService.Process.TrackingItemEvent State="Success" TraceLevel="1" CloudTable="ARLT_CUSTINFO" CloudColumn="" CloudName="arlt">
+            <Title>Importing Data</Title>
+            <Description></Description>
+            <StartTime>8/26/2015 8:45:53 PM</StartTime>
+            <EndTime>8/26/2015 8:45:53 PM</EndTime>
+            <Duration></Duration>
+            <ID>19</ID>
+            <Level>3</Level>
+            <ParentID>18</ParentID>
+            <StartTimeInTicks>635762187535467022</StartTimeInTicks>
+            <EndTimeInTicks>635762187535467022</EndTimeInTicks>
+            <RuntimeInfo assembly="Prism.Runtime.Base" type="Prism.Runtime.Base.RuntimeInfo" DriveTotalSize="275669577728" DriveTotalFreeSpace="108833722368" DriveAvailableFreeSpace="108833722368" AvailableMemory="4704915456" PhysicalMemory="8486371328" AvailableProcessMemory="188084224" />
+          </ElastiCube.ManagementService.Process.TrackingItemEvent>
+        </Children>
+      </ElastiCube.ManagementService.Process.TrackingItemEvent>
+      <Title>
+        <ID>20</ID>
+        <Title>Error Fetching Logs</Title>
+        <Title>The remote server could not be found or reached.</Title>
+        <StartTime>2015-08-26T20:46:13.9877022+05:30</StartTime>
+        <Level>2</Level>
+        <StackTrace>Local</StackTrace>
+        <Description>Error Fetching logs</Description>
+        <Class>Exception</Class>
+        <Source>PublishSession</Source>
+        <Method>GetAbortLogEntry</Method>
+      </Title>
+    </Children>
+  </ElastiCube.ManagementService.Process.TrackingItemEvent>
+</LogsRoot>

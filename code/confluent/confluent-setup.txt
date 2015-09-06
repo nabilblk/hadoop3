@@ -1,0 +1,67 @@
+ wget http://packages.confluent.io/archive/1.0/confluent-1.0-2.10.4.zip
+ unzip confluent-1.0-2.10.4.zip
+ cd confluent-1.0 
+
+ nohup ./bin/zookeeper-server-start ./etc/kafka/zookeeper.properties &
+
+ nohup ./bin/kafka-server-start ./etc/kafka/server.properties &
+
+ nohup ./bin/schema-registry-start ./etc/schema-registry/schema-registry.properties & 
+ 
+ nohup bin/kafka-rest-start & 
+ 
+ ./bin/kafka-avro-console-producer --broker-list localhost:9092 --topic test  --property value.schema='{"type":"record","name":"myrecord","fields":[{"name":"f1","type":"string"}]}'
+ 
+ --Enter the following 
+{"f1": "value4"}
+{"f1": "value5"}
+{"f1": "value6"}
+ 
+ --Test it...by consuming it..
+ ./bin/kafka-avro-console-consumer --topic test \
+             --zookeeper localhost:2181 \
+             --from-beginning
+			 
+ -- Now send a different set of data to the same topic!! A big no!! 
+ ./bin/kafka-avro-console-producer \
+             --broker-list localhost:9092 --topic test \
+             --property value.schema='{"type":"int"}'
+			 
+			 
+			 
+# Run camus
+../../bin/camus-run -D schema.registry.url=http://104.155.62.13:8081 -P camus.properties
+
+
+# View in Hive
+CREATE EXTERNAL TABLE camus
+	ROW FORMAT
+	SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+	STORED AS
+	INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+	OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+	LOCATION '/user/username/topics/test/hourly/2015/09/05/02'
+	TBLPROPERTIES ('avro.schema.literal'=
+			'{"type":"record","name":"myrecord","fields":[{"name":"f1","type":"string"}]}'
+	
+	);
+
+	# with partition - not working
+	CREATE EXTERNAL TABLE camus
+	partitioned by (year INT, month INT, day INT, hour INT)
+	ROW FORMAT
+	SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+	STORED AS
+	INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+	OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+	LOCATION '/user/username/topics/test/hourly'
+	TBLPROPERTIES ('avro.schema.literal'=
+			'{"type":"record","name":"myrecord","fields":[{"name":"f1","type":"string"}]}'
+	
+	);
+    
+	
+alter table camus add partition(year =2015,month=09, day=05,hour=02) location '/user/username/topics/test/hourly/2015/09/05/02'
+	
+	
+	

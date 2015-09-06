@@ -1,0 +1,21 @@
+-- download the JAR file from ejars\HiveUDFTest.jar into your sandbox
+-- Open Hive in the command line and push the JAR file into Hive
+
+
+ADD JAR hdfs://localhost:8020/user/cloudera/udf/HiveUDFTest.jar ;                         
+
+
+--Create temporary functions. Note the functions automatically map to the execute method
+CREATE TEMPORARY FUNCTION toUpper   AS 'com.altisource.hadoop.hive.HiveUDFTest';
+CREATE TEMPORARY FUNCTION doubleAge AS 'com.altisource.hadoop.hive.HiveUDFTest';
+ 
+-- The above explains that the data set is stored
+select toUpper (name) from person;
+select doubleAge(age) from person; 
+
+-- Note: Since age has a String field, this will result in a run-time exception
+
+ADD JAR /home/cloudera/workspace/code/hive/HivePipelineUDFTest.jar;
+create temporary function hashcode as 'com.altisource.hadoop.hive.HivePipelineUDFTest';
+
+select name, hashcode(toUpper(name)) from person;

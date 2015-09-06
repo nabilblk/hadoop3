@@ -1,0 +1,26 @@
+{"_ts":"inserted", "sale_date":"Sale Date","product":"widget","price":"19.95","quantity":10}
+
+
+{"_ts": "08/17/2015 17:21:10", "click_ts": "08/17/2015 17:21:10", "ip":"10.10.10.10", "url":"www.google.com", "swid":"1234", "isp":"verizon.net","channel":"Mozilla(Windows)", "city":"San Francisco", "country":"USA","state":"CA"}
+
+
+curl -v --user admin:Altisource123 'https://103.19.88.246:8443/zoomdata/service/upload?source=CSRT2' -X POST -H "Content-Type: application/json" -d '{"_ts": "08/17/2015 17:21:10", "click_ts": "08/17/2015 17:21:10", "ip":"10.10.10.10", "url":"www.google.com", "swid":"1234", "isp":"verizon.net","channel":"Mozilla(Windows)", "city":"San Francisco", "country":"USA","state":"CA"}' --insecure
+
+
+curl -v --user admin:Altisource123 'https://103.19.88.246:8443/zoomdata/service/upload?source=My%20RT2' -X POST -H "Content-Type: application/json" -d '{"_ts":"08/17/2015 17:21:10", "sale_date":"08/17/2015 10:27:20","product":"shoe","price":19.95,"quantity":10}' --insecure
+
+curl -v --user admin:Altisource123 https://103.19.88.246:8443/zoomdata/service/upload?source=My%20RT2 -X POST -H "Content-Type: application/json" -d '{"_ts":"08/17/2015 17:17:10", "sale_date":"08/17/2015 10:27:20","product":"shoe","price":19.95,"quantity":10}' --insecure
+
+ 
+
+curl -i \
+    -H "Content-Type: application/json" \
+	-X   POST -d \
+	'{ "name": "test", \
+	   "data": { \
+	       "x": [0.7050868858310919, 2.5237391513132454] \
+		   "y": [-2.188355770948789,1.2209788384469427] \
+		       }} \
+	https://viz-snarendran.herokuapp.com/sessions/6/visualizations 
+	
+	

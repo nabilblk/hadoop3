@@ -1,0 +1,4 @@
+//Exposing Spark SQL via JDBC
+
+./usr/sbin/start-thriftserver.sh \
+  --master local[2]

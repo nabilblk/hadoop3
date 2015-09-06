@@ -1,0 +1,23 @@
+# flume kafka sink
+
+#nc-source-kafka-sink.flume
+
+a1.sources = r1
+a1.sinks = k1
+a1.channels = c1
+
+# Describe/configure the source
+a1.sources.r1.type = netcat
+a1.sources.r1.bind = localhost
+a1.sources.r1.port = 44444
+
+a1.sinks.k1.type = org.apache.flume.sink.kafka.KafkaSink
+a1.sinks.k1.topic = clickstream
+a1.sinks.k1.brokerList = localhost:9092
+a1.sinks.k1.requiredAcks = 1
+a1.sinks.k1.batchSize = 20
+a1.sinks.k1.channel = c1
+
+a1.channels.c1.type = memory
+a1.channels.c1.capacity = 1000
+a1.channels.c1.transactionCapacity = 100

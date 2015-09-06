@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?><Request xmlns="http://www.macrovision.com/fnp/2004/11/activation"><RequestHeader><VersionNumber>3</VersionNumber><RequestType>ACTIVATION</RequestType></RequestHeader><RequestData><EntitlementData>
+<EntitlementId>TDPY-A678-2070-C3EC-E7A6</EntitlementId>
+<ActivationReason>0</ActivationReason>
+<ProductId>Not Applicable</ProductId><PublisherId>4073728</PublisherId>
+</EntitlementData><OriginData><ClientVersion>11.12.0</ClientVersion><ConfigData><IsServer>0</IsServer><TrustedHostInformation><TrustedId>1</TrustedId><Revision>1217636280562</Revision><RevisionType>ASR</RevisionType><MachineIdentifier>586206BDCF4EBE118BCBC6EFDE9FE4AEA1289E04</MachineIdentifier><Status>OK</Status></TrustedHostInformation></ConfigData>
+<Platform>
+<PlatformTypeName>x64_n6</PlatformTypeName>
+<OperatingSystem><Info>none</Info></OperatingSystem>
+</Platform>
+<UniqueMachineNumbers>
+<UniqueMachineNumber><Type>1</Type><Value>02B1F519B237789EAE65D354EEFF572EFE842976</Value></UniqueMachineNumber>
+<UniqueMachineNumber><Type>2</Type><Value>4A87852F633B212DF2EA634272D1B4159CE712E5</Value></UniqueMachineNumber>
+</UniqueMachineNumbers>
+<SequenceNumber>3</SequenceNumber></OriginData><PublisherDictionary>
+<Entries>
+<Entry>
+<Key>flexFulfillmentVersion</Key>
+<Value>1</Value>
+</Entry>
+<Entry>
+<Key>pubExpiry</Key>
+<Value>31-dec-2029</Value>
+</Entry>
+<Entry>
+<Key>pubDuration</Key>
+<Value>0</Value>
+</Entry>
+</Entries>
+</PublisherDictionary><VendorDictionary>
+<Entries>
+<Entry>
+<Key>OFFLINE</Key>
+<Value>true</Value>
+</Entry>
+</Entries>
+</VendorDictionary></RequestData><Hash>BBFB3806AD0AB886F2D50C83A75C905BFE0F3F31</Hash><HashVersion>1</HashVersion></Request>

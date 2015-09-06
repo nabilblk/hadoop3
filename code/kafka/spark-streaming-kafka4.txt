@@ -1,0 +1,25 @@
+//Spark Streaming + Kafka
+
+import kafka.serializer.StringDecoder
+import org.apache.spark.SparkConf
+import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.apache.spark.streaming.kafka.KafkaUtils
+
+val ssc = new StreamingContext(sc, Seconds(30))
+
+// hostname:port for Kafka brokers, not Zookeeper
+val kafkaParams = Map("metadata.broker.list" -> "localhost:9092")
+
+val topics = Set("test")
+
+val stream = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](ssc, kafkaParams, topics)
+
+val k = stream.map(_._1)
+val v = stream.map(_._2)
+val wordCounts = v.flatMap(_.split(" ")).map(x => (x, 1L)).reduceByKey(_ + _)
+k.print()
+v.print()
+wordCounts.print()
+
+ssc.start()
+ssc.awaitTermination()

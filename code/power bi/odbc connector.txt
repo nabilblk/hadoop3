@@ -1,0 +1,9 @@
+Driver=Cloudera ODBC Driver for Apache Hive;Host=quickstart.cloudera;Port=10000; HiveServerType=2;Schema=default;
+
+Driver=Microsoft Hive ODBC Driver;Host=quickstart.cloudera;Port=10000; HiveServerType=2;Schema=default;
+
+Driver=MapR Hive ODBC Connector;Host=quickstart.cloudera;Port=10000; HiveServerType=2;Schema=default;
+
+Driver=Cloudera ODBC Driver for Apache Hive;Host=130.211.89.22;Port=10000; HiveServerType=2;Schema=default;
+
+Driver=MapR Hive ODBC Connector;Host=130.211.89.22;Port=10000; HiveServerType=2;Schema=default;

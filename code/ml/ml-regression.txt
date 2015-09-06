@@ -1,0 +1,1 @@
+Goal of Regression: Learn a mapping from observations (features) to continuous labels given a training set (supervised learning)

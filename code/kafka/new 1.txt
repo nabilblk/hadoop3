@@ -1,0 +1,1 @@
+curl -v --user admin:Altisource123 'https://103.19.88.246:8443/zoomdata/service/upload?source=CSRT' -X POST -H "Content-Type: application/json" -d '{"_ts":"08/22/2015 19:27:05", "state":"ny","swid":"{E3FEBA62-CABA-11D4-820E-00A0C9E58E2D}", "url":"http://www.acme.com/SH55126545/VD55149415","country":"usa","city":"queensbury","ip":"67.240.15.94"}' --insecure
